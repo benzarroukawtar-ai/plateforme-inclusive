@@ -1,0 +1,221 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f4ff;
+  color: #24304a;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.carte {
+  width: 100%;
+  max-width: 450px;
+  padding: 35px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px #263b6418;
+}
+
+.icone {
+  font-size: 42px;
+  text-align: center;
+}
+
+.carte h1 {
+  text-align: center;
+  color: #3658c8;
+}
+
+.sous-titre {
+  text-align: center;
+  color: #68748a;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccd3e1;
+  border-radius: 8px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #6684ed;
+  outline-offset: 1px;
+}
+
+button {
+  padding: 13px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #3658c8;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2845a5;
+}
+
+form button {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.note {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 13px;
+  color: #68748a;
+}
+
+.espace {
+  min-height: 100vh;
+}
+
+.entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 5%;
+  background: white;
+  box-shadow: 0 2px 10px #263b6410;
+}
+
+.entete h1 {
+  margin-bottom: 5px;
+  color: #3658c8;
+}
+
+.entete p {
+  margin-top: 0;
+}
+
+.bouton-secondaire {
+  background: #e8edff;
+  color: #3658c8;
+}
+
+.bouton-secondaire:hover {
+  background: #d8e1ff;
+}
+
+.contenu {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.exercice,
+.editeur {
+  min-width: 0;
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #263b640d;
+}
+
+.exercice {
+  line-height: 1.7;
+}
+
+.matrice {
+  display: grid;
+  grid-template-columns: repeat(2, 45px);
+  gap: 8px;
+  width: max-content;
+  padding: 12px;
+  border: 1px solid #ccd3e1;
+  border-radius: 8px;
+  background: #f7f8ff;
+}
+
+.matrice span {
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.aide {
+  color: #68748a;
+  font-size: 14px;
+}
+
+.editeur textarea {
+  display: block;
+  width: 100%;
+  min-height: 430px;
+  padding: 15px;
+  border: 1px solid #33415e;
+  border-radius: 8px;
+  background: #182033;
+  color: #e5edff;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.editeur textarea::placeholder {
+  color: #aab5cc;
+}
+
+.editeur > button {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.retour {
+  margin-top: 20px;
+  padding: 15px;
+  border-left: 4px solid #3658c8;
+  border-radius: 8px;
+  background: #eef3ff;
+  line-height: 1.6;
+}
+
+@media (max-width: 750px) {
+  .contenu {
+    grid-template-columns: 1fr;
+  }
+
+  .entete {
+    padding: 15px 20px;
+  }
+
+  .editeur textarea {
+    min-height: 350px;
+  }
+}
